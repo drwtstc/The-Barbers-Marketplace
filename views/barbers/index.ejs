@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Barber Index</title>
+</head>
+
+<body>
+    <h1>Barber List</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Greeting</th>
+                <th>Name</th>
+                <th>Phone Number</th>
+                <th>Rates</th>
+                <th>Availability</th>
+                <th>Experience(yrs)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Write the line of EJS to iterate over movies using forEach -->
+        <tbody>
+            <% barbers.forEach(function(barber) { %>
+                <tr>
+                    <td>
+                        <%= barber.greeting %>
+                    </td>
+                    <td>
+                        <%= barber.name %>
+                    </td>
+                    <td>
+                        <%= barber.phone %>
+                    </td>
+                    <td>
+                        <%= barber.rates %>
+                    </td>
+                    <td>
+                        <%= barber.avails %>
+                    </td>
+                    <td>
+                        <%= barber.expYrs %>
+                    </td>
+                    <td><a href="/barbers/<%= barber._id %>">DETAILS</a></td>
+                </tr>
+                <% }) %>
+        </tbody>
+        </tbody>
+    </table>
+</body>
+
+</html>

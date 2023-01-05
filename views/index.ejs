@@ -7,12 +7,21 @@
   <body>
 
     <nav>
+      <% if (user) { %>
         <a href="/logout">LOG OUT</a>
+        <% } else { %>
         <a href="/auth/google" class="login">LOG IN&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
+        <% } %>
     </nav>
 
 
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <h1>TBM</h1>
+    <p>Welcome to The Barber's Marketplace</p>
+    <br>
+    <a href="/barbers/new">New Barber</a>
+    &nbsp;
+    <a href="/barbers">All Barbers</a>
+    &nbsp;
+    <!-- <a href="/barbers/show">Edit Barber</a> -->
   </body>
 </html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Barber Details</title>
+</head>
+<body>
+    
+    <section id="show-page">
+        <div>
+            <%= barber.greeting %>
+        </div>
+        <div>Name: </div>
+        <div>
+            <%= barber.name %>
+        </div>
+        <div>Phone Number: </div>
+        <div>
+            <%= barber.phone %>
+        </div>
+        <div>Rates: </div>
+        <div>
+            <%= barber.rates %>
+        </div>
+        <div>Availability: </div>
+        <div>
+            <%= barber.avails %>
+        </div>
+        <div>Experience(yrs): </div>
+        <div>
+            <%= barber.expYrs %>
+        </div>
+    </section>
+    <br>
+    <br>
+    <a href="/barbers/<%= barber._id %>/edit">Update Details</a>
+    <br>
+    <br>
+    <a href="/">Home</a>
+</body>
+</html>

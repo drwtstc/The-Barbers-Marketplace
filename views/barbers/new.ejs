@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Add Barber</title>
+</head>
+
+<body>
+    <h1>Barbers</h1>
+
+    <h2>Add a new Barber here:</h2>
+    <form action="/barbers" method="POST">
+        <label>
+            Greeting: <input type="text" name="greeting" size="50"> 
+        </label>
+        <br>
+        <label>
+            Name:<input type="text" name="name">
+        </label>
+        <br>
+        <label>
+            Phone:<input type="tel" name="phone">
+        </label>
+        <br>
+        <label>
+            Rates:<input type="text" name="rates">
+        </label>
+        <br>
+        <label>
+            Availability(Mon-Sun):<input type="text" name="avails">
+        </label>
+        <br>
+            Experience: Year(s)<input type="number" name="expYrs"> Months <input type="number" name="expMos">
+        </label>
+        <br>
+        <br>
+        <input type="submit" value="Add Barber">
+    </form>
+</body>
+
+</html>

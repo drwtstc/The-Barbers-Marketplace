@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Update Barber</title>
+</head>
+
+<body>
+    <h1>Barbers</h1>
+
+    <h2>Update Barber here:</h2>
+    <form action="/barbers/<%= barber._id %>?_method=PUT" method="POST">
+        <label>
+            Greeting: <br>
+            <input type="text" name="greeting" size="50" value="<%= barber.greeting %>"> 
+        </label>
+        <br><br>
+        <label>
+            Name: <br>
+            <input type="text" name="name" value="<%= barber.name %>">
+        </label>
+        <br><br>
+        <label>
+            Phone: <br>
+            <input type="tel" name="phone" value="<%= barber.phone %>">
+        </label>
+        <br><br>
+        <label>
+            Rates: <br>
+            <input type="text" name="rates" value="<%= barber.rates %>">
+        </label>
+        <br><br>
+        <label>
+            Availability(Mon-Sun): <br>
+            <input type="text" name="avails" value="<%= barber.avails %>">
+        </label>
+        <br><br>
+            Experience: Year(s) <br>
+            <input type="number" name="expYrs" value="<%= barber.expYrs %>"> Months <input type="number" name="expMos" value="<%= barber.expMos %>">
+        </label>
+        <br>
+        <br>
+        <br>
+        <input type="submit" value="Edit Barber">
+    </form>
+    <br>
+    <br>
+    <br>
+    <form action="/barbers/<%= barber._id %>?_method=DELETE" method="POST">
+        <button type="submit">Delete Barber</button>
+    </form>
+
+</body>
+
+</html>
