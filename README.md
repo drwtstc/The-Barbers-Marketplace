@@ -32,3 +32,6 @@ Coaches will be authorized to view all of their athletes' workouts. They can vie
 
 ## Trello Board
 https://trello.com/b/g3iMGM6a/the-barbers-marketplace
+
+## Wireframes
+![Alt text](https://i.imgur.com/ZU9Q8Ew.jpg "Wireframes")
