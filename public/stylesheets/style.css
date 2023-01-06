@@ -1,7 +1,8 @@
 * {
   box-sizing: border-box;
   font-family: 'Raleway Dots', cursive;
-  color: rgb(225, 232, 225);
+  color: black;
+  font-weight: bold;
 }
 
 .BP {
@@ -40,9 +41,10 @@ body > main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(130, 69, 62);
+  background-color: rgb(233, 221, 220);
   padding: 20px;
   overflow-y: scroll;
+  font-size: larger;
 }
 
 body > main h1:first-child {
@@ -57,12 +59,12 @@ nav > a {
 }
 
 nav > a:hover:not(.active) {
-  color: white;
+  color: black;
   background-color: #828788;
 }
 
 nav > a.active {
-  color: white;
+  color: black;
   cursor: default;
 }
 
@@ -117,7 +119,7 @@ table td {
 }
 
 #list a:hover {
-  background-color: white;
+  background-color: black;
 }
 
 #show-page {
@@ -145,7 +147,7 @@ table td {
 }
 
 hr {
-  color: #424748
+  color: black
 }
 
 #badge-container {
