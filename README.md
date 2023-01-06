@@ -12,7 +12,9 @@ Welcome to The Barber's Marketplace, a quick and easy way to connect Barbers and
 -Express <br>
 -Mongoose <br>
 -CSS / Bootstrap <br>
--Google OAuth 
+-Google OAuth <br>
+-Atlas <br>
+-Heroku <br>
 
 
 ## The users will be able to:
@@ -26,6 +28,7 @@ Coaches will be authorized to view all of their athletes' workouts. They can vie
 -Barber and Patron rating system <br>
 -Direct message functionality in-app <br>
 -Payment Options <br>
+-Expand beyond barbers to include beauticians, local stylists, manicurists
 
 ## Trello Board
 https://trello.com/b/g3iMGM6a/the-barbers-marketplace
