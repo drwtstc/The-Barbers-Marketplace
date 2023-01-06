@@ -4,6 +4,12 @@
   color: rgb(225, 232, 225);
 }
 
+.BP {
+  display: flex;
+  flex-direction: row;
+}
+
+
 body {
   margin: 0;
   height: 100vh;
@@ -58,6 +64,10 @@ nav > a:hover:not(.active) {
 nav > a.active {
   color: white;
   cursor: default;
+}
+
+h1{
+  text-align: center;
 }
 
 #new-form {
@@ -167,12 +177,7 @@ li {
   font-weight: bold;
 }
 
-.login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 34px;
-}
+
 
 .login img {
   height: 30px;
