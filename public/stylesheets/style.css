@@ -7,13 +7,46 @@ a {
   color: #00B7FF;
 }
 
-.login {
+/* .login {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 34px;
-}
+} */
 
 .login img {
   height: 30px;
 }
+
+/* Add a dark background color with a little bit see-through */
+.navbar {
+  margin-bottom: 0;
+  background-color: #2d2d30;
+  border: 0;
+  font-size: 11px !important;
+  letter-spacing: 2px;
+  opacity: 0.9;
+}
+
+li {
+  display: flex;
+}
+
+/* Add a gray color to all navbar links */
+.navbar li a, .navbar .navbar-brand {
+  color: #d5d5d5 !important;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+/* On hover, the links will turn white */
+.navbar-nav li a:hover {
+  color: #fff !important;
+}
+
+/* The active link */
+.navbar-nav li.active a {
+  color: #fff !important;
+  background-color:#29292c !important;
+}
+

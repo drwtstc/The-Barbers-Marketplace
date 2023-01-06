@@ -6,17 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <title>Add Barber</title>
+    <title>Add Patron</title>
 </head>
 
 <body>
-    <h1>Barbers</h1>
+    <h1>Patrons</h1>
 
-    <h2>Add a new Barber here:</h2>
-    <form action="/barbers" method="POST">
-        <label>
-            Greeting: <input type="text" name="greeting" size="50"> 
-        </label>
+    <h2>Add Your Info Here:</h2>
+    <form action="/patrons" method="POST">
         <br>
         <label>
             Name:<input type="text" name="name">
@@ -27,19 +24,16 @@
         </label>
         <br>
         <label>
-            Rates:<input type="text" name="rates">
+            Preferred Day:<input type="text" name="prefDay">
         </label>
         <br>
         <label>
-            Availability(Mon-Sun):<input type="text" name="avails">
+            Preferred Time:<input type="time" name="PrefTime">
         </label>
-        <br>
-        <label>
-            Experience: Year(s)<input type="number" name="expYrs"> Months <input type="number" name="expMos">
-        </label>
+       
         <br>
         <br>
-        <input type="submit" value="Add Barber">
+        <input type="submit" value="Add Patron">
     </form>
 </body>
 
