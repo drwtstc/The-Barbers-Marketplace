@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <title>Add Patron</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <title>Add Patron</title>
 </head>
-
 <body>
+  <nav>
+    <img src="/images/clippers.png">
+    <% if (user) { %>
+      <a href="/logout">LOG OUT</a>
+    <% } else { %>
+      <a href="/auth/google" class="login">LOG IN&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
+    <% } %>
+  </nav>
+  
+  <main>
     <h1>Patrons</h1>
 
     <h2>Add Your Info Here:</h2>
@@ -28,13 +36,16 @@
         </label>
         <br>
         <label>
-            Preferred Time:<input type="time" name="PrefTime">
+            Preferred Time:<input type="text" name="prefTime">
         </label>
        
         <br>
         <br>
         <input type="submit" value="Add Patron">
     </form>
+    <br><br><br>
+    <a href="/">Home</a>
+</main>
 </body>
 
 </html>
