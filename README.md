@@ -19,8 +19,7 @@ Welcome to The Barber's Marketplace, a quick and easy way to connect Barbers and
 
 ## The users will be able to:
 
-A Barber will be able to sign up and make changes to their information. They will also be able to view a listing of patrons. Patrons will be able to sign up and view a listing of Barbers and barber detials.
-Coaches will be authorized to view all of their athletes' workouts. They can view changes and trends in athlete benchmarks to help formulate a training plan for each athlete. 
+A Barber will be able to sign up and make changes to their information. They will also be able to view a listing of patrons. Patrons will be able to sign up and view a listing of Barbers and barber detials. 
 
 
 ## Ice Box Items:
